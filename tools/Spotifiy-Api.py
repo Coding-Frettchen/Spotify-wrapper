@@ -66,7 +66,9 @@ def get_devices(base_url, headers):
     
 
 def get_devices(base_url, headers):
-    url  = f"{base_url}/me"
+    url  = f"{base_url}/me/player/devices"
+    respons_json = requests.get(url, headers)
+    
 
 # Muss noch gemacht werden ist um playlists ab zu rufen
 # def name_to_uri(name):
